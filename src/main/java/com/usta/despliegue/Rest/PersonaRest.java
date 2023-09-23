@@ -46,7 +46,7 @@ public class PersonaRest {
         }
     }
 
-    @PutMapping("/ ")
+    @PutMapping("/editar")
     private ResponseEntity<PersonaEntity> update(@RequestBody PersonaEntity persona) {
         PersonaEntity temporal = iPersonaService.update(persona);
         try {
